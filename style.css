@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo e container */
+body {
+    background-color: #6653AE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #331552;
+}
+
+/* Estilo do input e botão */
+.input-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+#add-button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #331552;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#add-button:hover {
+    background-color: #331552;
+}
+
+/* Estilo das atividades */
+.task-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.task-card {
+    background-color: #dcd6f7;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.task-text {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: #331552;
+}
+
+.task-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.task-actions button {
+    background-color: #331552;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task-actions button:hover {
+    background-color: #732d91;
+}
+
+.task-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-top: 10px;
+    border-radius: 10px;
+}
